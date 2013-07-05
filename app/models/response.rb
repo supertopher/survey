@@ -1,3 +1,3 @@
 class Response < ActiveRecord::Base
-  # Remember to create a migration!
+   validates_presence_of :response
 end

@@ -30,3 +30,11 @@ nav a{
 th {
   text-align: left;
 }
+
+.live_raptor{
+position:fixed;
+   left:0px;
+   bottom:0px;
+   width:15%;
+   background:#999;
+}

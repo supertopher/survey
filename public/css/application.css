@@ -58,6 +58,10 @@ header h3 a{
   text-decoration: none;
   color: white;
 }
+
+.small_lizard{
+  height: 1em;
+}
 nav{
   text-align: right;
   float: right;

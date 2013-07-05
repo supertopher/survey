@@ -1,4 +1,4 @@
-<h2>Choose a Survey</h2>
+<h2 class="page_title">Choose a Survey</h2>
 
 <% Survey.all.each do |survey| %>
   <p><a href="/surveys/<%= survey.id %>"><%= survey.name %></a></p>

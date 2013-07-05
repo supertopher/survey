@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <link rel="stylesheet" href="/css/normalize.css">
 
   <link rel="stylesheet" href="/css/application.css">
@@ -12,11 +11,11 @@
   <title></title>
 </head>
 <body>
-  <header>
+<header>
     <h3>Survey Lizard</h3>
-
-    <nav>
-      <a href="/">Home</a>
+    
+  <nav>
+    <a href="/">Home</a>
       <% if current_user %>
       <a href="/logout">Logout</a>
       <a href="/surveys/create/">Create Survey</a>
@@ -28,8 +27,9 @@
 
     </nav>
   </header>
-  <div class="container">
 
+  <div class="container">
+ 
     <%= yield %>
   </div>
   <img src="http://localhost:9393/liveraptor.png" class="live_raptor">

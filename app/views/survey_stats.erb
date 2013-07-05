@@ -1,12 +1,17 @@
-<h1 class="page_title">Your Stats</h1>
+<h1 class="page_title"><%= @survey.name %></h1>
 
-<h3>Number of times survey was taken ie. total responses:</h3>
-<%= @responses.size %>
+<h2><%= @survey.questions.last.name %></h2>
 
-<h3>Distribution of responses (based on choice id)</h3>
-<h4>ie. number of responses by choice_id</h4>
+<h3>Number of times survey was taken ie. total responses: <%= @responses.size %></h3>
+
+
+<h3>Distribution of responses (based on choice id):</h3>
 
 <% distribution = [] %>
 <% @choices.each do |choice| %>
-  <% distribution << @responses.collect { |response| response.choice_id == choice.id} %>
+  <% distribution << @responses.select { |response| response.choice_id == choice.id} %>
+<% end %>
+
+<% @choices.each_with_index do |choice, index| %>
+  <p><%= choice.name %>: <%= distribution[index].size %></p>
 <% end %>

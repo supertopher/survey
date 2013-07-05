@@ -1,8 +1,31 @@
 .container {
   margin: 20px auto;
-  width: 600px;
+  width: 65%;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  -webkit-box-shadow: -7px 8px 13px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    -7px 8px 13px rgba(50, 50, 50, 0.75);
+  box-shadow:         -7px 8px 13px rgba(50, 50, 50, 0.75);
+}
+
+header{
+  /*padding: 1em;*/
+  background-color: #7B9580;
+}
+
+header h3{
+  display: inline-block;
+  color: white;
+  line-height: 1.5em;
+}
+nav{
+  width: 65%;
+  display: block;
+  margin: auto;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
 }
 th {
   text-align: left;

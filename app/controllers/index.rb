@@ -24,7 +24,7 @@ get '/logout' do
 end
 
 get "/login" do
-  erb :login_user
+  erb :login
 end
 
 post "/login" do 

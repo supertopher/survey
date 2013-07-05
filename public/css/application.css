@@ -53,6 +53,11 @@ header h3{
   color: white;
   line-height: 1.5em;
 }
+
+header h3 a{
+  text-decoration: none;
+  color: white;
+}
 nav{
   text-align: right;
   float: right;
@@ -64,6 +69,7 @@ nav{
 }
 
 nav a{
+  margin-left: 4%;
   text-decoration: none;
   color: white;
 }

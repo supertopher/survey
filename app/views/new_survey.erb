@@ -1,10 +1,13 @@
 <form method="post" action="/surveys/create/">
   <h3><input type="text" name="survey[title]" placeholder="survey name"></h3>
   <p><input type="text" name="survey[question]" placeholder="your question"></p>
-  <p><input type="text" name="survey[choice_1]" placeholder="choice"></p>
-  <p><input type="text" name="survey[choice_1]" placeholder="choice"></p>
+  <p><input type="text" name="survey[choice][1]" placeholder="choice"></p> 
+  <div class="choices">
+    <div class="new_choice">
+      <p><input type="text" name="survey[choice][2]" placeholder="choice"></p>
+    </div>
+  </div>
+
+  <p><button id="add_choice" type="button">add choice</button></p>
   <p><input type="submit" value="create survey"></p>
   </form>
-
-
-<button type="button">add choice</button>  

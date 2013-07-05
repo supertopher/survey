@@ -2,8 +2,8 @@ require 'bcrypt'
 
 
 class User < ActiveRecord::Base
- has_many :surveys
- has_many :responses
+   has_many :surveys
+   has_many :responses
    validates_presence_of :user_name
    validates_presence_of :password_hash
 

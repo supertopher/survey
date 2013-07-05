@@ -5,6 +5,12 @@
   -webkit-box-shadow: -7px 8px 13px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    -7px 8px 13px rgba(50, 50, 50, 0.75);
   box-shadow:         -7px 8px 13px rgba(50, 50, 50, 0.75);
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius:  15px;
+  -moz-border-radius-bottomright:     15px;
+  -moz-border-radius-bottomleft:      15px;
+  border-bottom-right-radius:         15px;
+  border-bottom-left-radius:          15px;
 }
 
 header{
@@ -13,14 +19,21 @@ header{
 }
 
 header h3{
+  margin: auto;
+  margin-left: 16%;
+  width: 30%;
   display: inline-block;
   color: white;
   line-height: 1.5em;
 }
 nav{
-  width: 65%;
-  display: block;
-  margin: auto;
+  text-align: right;
+  float: right;
+  width: 30%;
+  margin-right: 16%;
+  line-height: 1.9em;
+  /*display: inline-block;*/
+  /*margin: auto;*/
 }
 
 nav a{
@@ -32,8 +45,8 @@ th {
 }
 
 .live_raptor{
-position:fixed;
-   left:0px;
-   bottom:0px;
-   width:15%;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:15%;
 }

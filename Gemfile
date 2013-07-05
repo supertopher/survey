@@ -20,6 +20,8 @@ gem 'shotgun'
 gem 'bcrypt-ruby'
 
 group :test do
+  gem 'wirble'
+  gem 'awesome_print'
   gem 'faker'
   gem 'rspec'
 end

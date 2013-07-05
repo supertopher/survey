@@ -1,6 +1,7 @@
 class Question < ActiveRecord::Base
- validates_presence_of :name
-  # Remember to create a migration!
   has_many :choices
+  has_many :responses
   belongs_to :survey
+  
+ validates_presence_of :name
 end

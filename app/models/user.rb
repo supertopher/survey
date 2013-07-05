@@ -1,16 +1,13 @@
 require 'bcrypt'
 
-
 class User < ActiveRecord::Base
-   has_many :surveys
-   has_many :responses
-   validates_presence_of :user_name
-   validates_presence_of :password_hash
+  has_many :surveys
+  has_many :responses
 
-
+  validates_presence_of :user_name
+  validates_presence_of :password_hash
 
   include BCrypt
-  # Remember to create a migration!
   def password
     @password ||= Password.new(password_hash)
   end

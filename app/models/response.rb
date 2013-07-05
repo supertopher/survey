@@ -1,4 +1,7 @@
 class Response < ActiveRecord::Base
-  validates_presence_of :response
   belongs_to :user
+  belongs_to :question
+  belongs_to :choice
+  
+  validates_presence_of :response
 end

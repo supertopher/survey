@@ -4,7 +4,7 @@ get "/surveys/create/"  do
 end
 
 post "/surveys/create/"  do
-   puts "9" * 80
+   
   puts params
 
   question = Question.create(name: params[:survey][:question])
@@ -26,4 +26,15 @@ end
 get "/surveys" do
 
   erb :all_surveys
+end
+
+post "/surveys/:id" do
+  puts "8" * 80
+  puts params
+  choice object 
+    user_id = session
+    question_id = params[:question]
+    choice_id = params[:choice]
+
+
 end

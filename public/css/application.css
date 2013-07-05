@@ -13,9 +13,23 @@
   border-bottom-left-radius:          15px;
 }
 
+.choice_name{
+  margin-left: 2%;
+  line-height: 1.4em;
+}
+
+.choices{
+  list-style: none;
+}
+
 .page_title{
   color: #7B9580;
   text-align: center;
+  font-family: Tahoma;
+}
+
+.survey_title{
+  color: #7B9580;
   font-family: Tahoma;
 }
 

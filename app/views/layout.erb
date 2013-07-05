@@ -16,10 +16,10 @@
 
   <nav>
       <% if current_user %>
-      <a href="/logout">Logout</a>
+      <a href="/users/<%= @current_user.id %>">Profile</a>
       <a href="/surveys/create/">Create Survey</a>
       <a href="/surveys">Take Survey</a>
-      <a href="/users/<%= User.find(session[:user]) %>">Profile</a>
+      <a href="/logout">Logout</a>
 
       <% else %>
       <a href="/users/create">Create Account</a>

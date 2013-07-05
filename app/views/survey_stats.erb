@@ -1,0 +1,12 @@
+<h1 class="page_title">Your Stats</h1>
+
+<h3>Number of times survey was taken ie. total responses:</h3>
+<%= @responses.size %>
+
+<h3>Distribution of responses (based on choice id)</h3>
+<h4>ie. number of responses by choice_id</h4>
+
+<% distribution = [] %>
+<% @choices.each do |choice| %>
+  <% distribution << @responses.collect { |response| response.choice_id == choice.id} %>
+<% end %>

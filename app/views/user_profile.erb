@@ -3,5 +3,5 @@
 <h2>Your Surveys</h2>
 
 <% @user.surveys.each do |survey| %>
-  <p><a href="/surveys/<%= survey.id %>"><%= survey.name %></a></p>
+  <p><a href="/surveys/<%= survey.id %>/stats"><%= survey.name %></a></p>
 <% end %>

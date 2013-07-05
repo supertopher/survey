@@ -32,3 +32,10 @@ post "/surveys/:id" do
   @user_response = Response.create(question_id: params["question"].key(""), choice_id: params["choice"].key("on"), user_id: session[:user])
   redirect "/"
 end
+
+get "/surveys/:survey_id/stats" do
+  @survey = Survey.find(params[:survey_id])
+  @choices = @survey.questions.last.choices
+  @responses = @survey.questions.last.responses
+  erb :survey_stats
+end

@@ -9,7 +9,7 @@ post '/users/create' do
   if user
     session[:user] = user.id
   end
-  redirect "/"
+  redirect "/users/#{user.id}"
 end
 
 get '/logout' do
@@ -29,5 +29,11 @@ post "/login" do
   if authenticate
     session[:user] = user.id
   end
-  redirect "/"
+  redirect "/users/#{user.id}"
+end
+
+
+get "/users/:id" do
+  @user = User.find(params[:id])
+  erb :user_profile
 end

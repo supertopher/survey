@@ -48,7 +48,7 @@ header{
 header h3{
   margin: auto;
   margin-left: 16%;
-  width: 30%;
+  width: 20%;
   display: inline-block;
   color: white;
   line-height: 1.5em;
@@ -65,10 +65,10 @@ header h3 a{
 nav{
   text-align: right;
   float: right;
-  width: 30%;
+  width: 40%;
   margin-right: 16%;
   line-height: 1.9em;
-  /*display: inline-block;*/
+   /*display: inline-block;*/
   /*margin: auto;*/
 }
 

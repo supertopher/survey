@@ -13,6 +13,20 @@
   border-bottom-left-radius:          15px;
 }
 
+.page_title{
+  color: #7B9580;
+  text-align: center;
+  font-family: Tahoma;
+
+}
+
+.field_names{
+  font-family: Tahoma;
+  font-weight: bolder;
+  color: #7B9580;
+  margin-bottom: -.1em;
+}
+
 header{
   /*padding: 1em;*/
   background-color: #7B9580;

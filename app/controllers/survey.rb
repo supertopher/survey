@@ -12,8 +12,18 @@ post "/surveys/create/"  do
     question.choices << Choice.create(name: choice)
   end  
   
-  survey = Survey.create(name: params[:survey][:title])
+  survey = Survey.create(name: params[:survey][:title], user_id: session[:user])
   survey.questions << question
 
-  redirect '/'
+  redirect "/survey/#{survey.id}"
+end
+
+get "/surveys/:id" do
+  @survey = Survey.find(params[:id])
+  erb :survey_by_id
+end
+
+get "/surveys" do
+ 
+  erb :all_surveys
 end

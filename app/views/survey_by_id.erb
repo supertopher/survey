@@ -1,0 +1,13 @@
+<h1>Your Survey</h1>
+
+<h3><%= @survey.name %></h3>
+<ul>
+<% @survey.questions.each do |question| %>
+  <li><%= question.name %>
+  <ul><% question.choices.each do |choice| %>
+    <li><input type="radio" name="user_response"> <%= choice.name %></li>
+
+  <% end %></ul>
+  </li>
+<% end %>
+</ul>

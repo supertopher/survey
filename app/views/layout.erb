@@ -24,11 +24,11 @@
     <h3>Survey Lizard</h3>
     <a href="/">Home</a>
       <% if current_user %>
-      <a href="/logout">logout</a>
-      <a href="#">Create Survey</a>
+      <a href="/logout">Logout</a>
+      <a href="/surveys/create/">Create Survey</a>
       <a href="#">Take Survey</a>
       <% else %>
-      <a href="/">Create Account</a>
+      <a href="/users/create">Create Account</a>
       <a href="/login">Login</a>
     <% end %>
 

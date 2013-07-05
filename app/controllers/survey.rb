@@ -29,12 +29,6 @@ get "/surveys" do
 end
 
 post "/surveys/:id" do
-  puts "8" * 80
-  puts params
-  choice object 
-    user_id = session
-    question_id = params[:question]
-    choice_id = params[:choice]
-
-
+  @user_response = Response.create(question_id: params["question"].key(""), choice_id: params["choice"].key("on"), user_id: session[:user])
+  redirect "/"
 end

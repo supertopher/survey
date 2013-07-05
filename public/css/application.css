@@ -45,6 +45,17 @@ header{
   background-color: #7B9580;
 }
 
+.homepage_image{
+  display: block;
+  margin: auto;
+  -moz-box-shadow:    0 0 15px #000000;
+  -webkit-box-shadow: 0 0 15px #000000;
+  box-shadow:         0 0 15px #000000;
+}
+.welcome_text{
+  float: left;
+}
+
 header h3{
   margin: auto;
   margin-left: 16%;
@@ -68,7 +79,7 @@ nav{
   width: 40%;
   margin-right: 16%;
   line-height: 1.9em;
-   /*display: inline-block;*/
+  /*display: inline-block;*/
   /*margin: auto;*/
 }
 

@@ -17,6 +17,21 @@
 
   <title></title>
 </head>
+<header>
+    
+  <nav>
+    <a href="/">Home</a>
+      <% if current_user %>
+      <a href="/">logout</a>
+      <a href="#">Create Survey</a>
+      <a href="#">Take Survey</a>
+      <% else %>
+      <a href="/">Create Account</a>
+      <a href="/login">Login</a>
+    <% end %>
+    
+  </nav>
+</header>
 <body>
   <div class="container">
  

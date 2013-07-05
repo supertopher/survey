@@ -1,10 +1,18 @@
+<h2 class="page_title">Create a Survey</h2>
+
 <form method="post" action="/surveys/create/">
-  <h3><input type="text" name="survey[title]" placeholder="survey name"></h3>
-  <p><input type="text" name="survey[question]" placeholder="your question"></p>
-  <p><input type="text" name="survey[choice][1]" placeholder="choice"></p> 
+  <h3>
+    <div class="field_names">Survey Name</div>
+    <input type="text" name="survey[title]" placeholder="survey name">
+  </h3>
+  <div class="field_names">Question to be Asked</div>
+  <input type="text" name="survey[question]" placeholder="your question">
+  <div class="field_names">Choice</div>
+  <input type="text" name="survey[choice][1]" placeholder="choice">
   <div class="choices">
     <div class="new_choice">
-      <p><input type="text" name="survey[choice][2]" placeholder="choice"></p>
+    <div class="field_names">Choice</div>
+      <input type="text" name="survey[choice][2]" placeholder="choice">
     </div>
   </div>
 

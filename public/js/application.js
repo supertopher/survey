@@ -4,9 +4,9 @@ $(document).ready(function() {
   console.log("I've started:");
   $("#add_choice").on("click", function(e) {
     e.preventDefault();
-    choiceCounter++;
-    var new_choice = "<p><input type='text' name='survey[choice][" + choiceCounter + "]' placeholder='choice'></p>";
-    // var new_choice = "<p><input type='text' name='survey[choice][2]'' placeholder='choice'></p>";
+    choiceCounter++
+    var new_choice = "<div class='field_names'>Choice</div><input type='text' name='survey[choice][" + choiceCounter + "]' placeholder='choice'>";
+    // var new_choice = "<input type='text' name='survey[choice][2]'' placeholder='choice'></p>";
     console.log(new_choice);
     $("form .choices").append(new_choice);
   });
